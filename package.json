@@ -1,0 +1,29 @@
+{
+  "name": "user-story-agent",
+  "version": "1.0.0",
+  "description": "Agent tự động tạo user story từ Jira ticket",
+  "type": "module",
+  "main": "user-story-agent.mjs",
+  "scripts": {
+    "start": "node generate-and-update.mjs",
+    "fetch": "node fetch-ticket.mjs",
+    "generate": "node generate-story.mjs",
+    "update-ac": "node update-ac-direct.mjs",
+    "test-urls": "node test-urls.mjs",
+    "setup": "echo '✅ Run: cp .env.example .env && npm install'"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2"
+  },
+  "keywords": [
+    "jira",
+    "user-story",
+    "agent",
+    "claude",
+    "anthropic"
+  ],
+  "author": "",
+  "license": "MIT"
+}
